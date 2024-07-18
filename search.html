@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | A Photo Search App</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="search.css">
+</head>
+<body> 
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="./"><img src="./assets/logo.png" alt="Logo" class="logo"></a>
+        <a href="./"><h1 class="title">GALLERY</h1></a>
+        <form action="./search.html"  method="get">
+            <input type="text" name="q" autocomplete="off" class="search" placeholder="SEARCH">
+            <input type="submit" value="SEARCH" class="search">
+        </form>
+    </nav>
+
+    <!-- Main Section -->
+    <section>
+        <h1 class="heading">SEARCH FOR - <span id="search_query"></span></h1>
+        <div class="container" id="result_container"></div>
+    </section>
+
+  <!-- Footer -->
+  <footer>
+    <a href="./"><h5>Gallery</h5></a>
+    
+    <h4> Designed and Developed by Shivangi Dwivedi </h4>
+    
+    <a href="./"><h5>Github</h5></a>
+</footer>
+    
+    <script src="common.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

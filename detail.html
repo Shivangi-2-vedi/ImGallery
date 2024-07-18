@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | A Photo Search App</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="detail.css">
+</head>
+<body> 
+ <!-- Navigation Bar -->
+ <nav>
+    <a href="./"><img src="./assets/logo.png" alt="Logo" class="logo"></a>
+    <a href="./"><h1 class="title">GALLERY</h1></a>
+    <form action="./search.html"  method="get">
+        <input type="text" name="q" autocomplete="off" class="search" placeholder="SEARCH">
+        <input type="submit" value="SEARCH" class="search">
+    </form>
+</nav>
+
+     <!-- Main Section -->
+    <section class="info">
+
+        <h1 class="heading">DETAIL FOR - <span id="image_id"></span></h1>
+        <div class="detail">
+            <img id="detail_image" alt="Primary"/>
+            <div class="content">
+                <h1 class="description"  id="description_text"></h1>
+                <br>
+                <h1>Uploaded by - @ <span id="username"></span></h1>
+                <br>
+                <h4>Date - <span id="upload_date"></span></h4>
+                <br>
+                <h4><span id="like_count"></span>Likes ( <span id="view_count"></span>Views)</h4>
+                <br>
+                <br>
+                <br>
+                <h1 class="description" id="alt_description"></h1>
+                <br>
+                <br>
+                <br>
+                <h5>Base color</h5>
+                <br>
+                <div class="image_color" id="image_color">
+                    <span id="color_text"></span>
+                </div>
+                <br>
+                <br>
+                <br>
+                <a target='_blank' id="download_link" class="button">Download</h5></a>
+                <!-- Data -->
+                <!-- Like and View -->
+                <!-- Alternate Discription -->
+                <!-- colour of the image -->
+                <!-- Download -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="./"><h5>Gallery</h5></a>
+
+        <h4> Designed and Developed by Shivangi Dwivedi </h4>
+
+        <a href="./"><h5>Github</h5></a>
+    </footer>
+    
+    <script src="detail.js"></script>
+    <script src="common.js"></script>
+</body>
+</html>
